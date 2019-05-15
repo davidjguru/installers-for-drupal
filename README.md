@@ -3,7 +3,7 @@ Installers For Drupal is a collection of craft scripts  for launch various types
 
 
 ## Recipe 1: Angular & Drupal & DDEV
-1. *Resource:* /installers/install_angular_drupal_ddev
+1. _Resource:_ /installers/install_angular_drupal_ddev
 2. *Description:* Download and install a Drupal codebase project inside a new environment based in docker - ddev with node, npm, Angular and Drupal 8. 
 3. *Use:* Just for create Debian - based environments to work in Drupal - Headless projects (In this case, using Angular for the frontend). 
 4. *Characteristics:* 
