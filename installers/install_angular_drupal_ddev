@@ -58,13 +58,10 @@ yes | test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bi
 yes | test -r ~/.bash_profile && echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.bash_profile
 echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.profile 
 
-## Test the new Linuxbrew installation
-echo -e "   \e[1;4;31mTesting the Linuxbrew installation: \e[0m"
-brew install hello
-
-## Install ddev 
+## Install ddev or update if exists  
 echo -e "   \e[1;4;31mInstalling ddev in your sistem: \e[0m"
 brew tap drud/ddev && brew install ddev
+brew upgrade ddev
 
 ## Get the keyname of the project
 echo -e "   \e[1;4;31mWrite your project name: \e[0m"
@@ -88,9 +85,9 @@ sensible-browser http://$varkeyname.ddev.local
 # Install other resources 
 
 ## Install packages in the new system
-echo -e "    \e[1;4;31mIn this block, we'll install some packages like sqlite and others: \e[0m"
+echo -e "    \e[1;4;31mIn this block, we'll install some packages like sqlite, git-flow and others: \e[0m"
 ddev exec sudo apt-get update
-ddev exec sudo apt-get install -y sqlite3
+ddev exec sudo apt-get install -y sqlite3 git-flow
 
 ## Installing node, npm and Angular
 echo -e "    \e[1;4;31mInstalling node, npm and Angular in our new system: \e[0m"

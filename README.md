@@ -18,10 +18,17 @@ Installers For Drupal is a collection of craft scripts  for launch various types
 - Open the new Drupal in Browser and goes to the container prompt. 
 - Ready to work. 
 5. **Specifications:**
+ - Using Docker in Host: 18.09.6
+ - Using Homebrew / Linuxbrew in Host: 2.1.2 
+ - Using DDEV in Host: 1.8.0
  - OS in Container: Debian 9.8 Stretch
  - PHP in Container: 7.3.3
  - Apache in Container: 2.4.25
  - Database: MariaDB, version 10.2.22
+ - Git: 2.11.0
+ - Git Flow: 1.11.0
+ - Composer in Container: 1.8.4 
+ - Drush in Container: 9.6.4
  - Node in Container: 8.15.1
  - npm in Container: 6.4.1
  - Angular CLI in Container: 7.3.9
